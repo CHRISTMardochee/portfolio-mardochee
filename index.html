@@ -182,7 +182,36 @@
 
       <div class="projects-grid">
 
-        <!-- Project 1: Control Fer -->
+        <!-- Project 1: HappyPro -->
+        <div class="project-card reveal">
+          <div class="project-image-wrapper">
+            <img src="assets/project-happypro.png" alt="HappyPro — Services de ménage" class="project-image">
+            <span class="project-image-overlay">Automatisation · Ménage</span>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Automatisation · Ménage · Blanchisserie</span>
+            <h3 class="project-name">HappyPro</h3>
+            <p class="project-description" id="desc-1">
+              Plateforme SaaS d'automatisation des services de ménage et blanchisserie pour les propriétaires de
+              locations courte durée. Synchronisation avec les calendriers Airbnb et Booking.com, gestion de la qualité
+              avec rapports photo, et réseau de professionnels qualifiés. Intégration de Stripe Connect pour la gestion
+              des paiements marketplace. Déployée à Toulouse, Paris, Cannes et Montpellier.
+            </p>
+            <button class="show-more-btn" onclick="toggleDescription('desc-1', this)">voir plus</button>
+            <div class="project-tags">
+              <span class="project-tag">Django</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">REST API</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">Redis</span>
+              <span class="project-tag">Celery</span>
+              <span class="project-tag">Stripe Connect</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Control Fer -->
         <div class="project-card reveal">
           <div class="project-image-wrapper">
             <img src="assets/project-controlfer.png" alt="Control Fer — Fabrimetal" class="project-image">
@@ -191,23 +220,25 @@
           <div class="project-info">
             <span class="project-category">Industrie · Mobile</span>
             <h3 class="project-name">Control Fer — Fabrimetal</h3>
-            <p class="project-description" id="desc-1">
+            <p class="project-description" id="desc-2">
               Application permettant aux citoyens de vérifier la conformité du fer aux normes de qualité. Déployée au
               Sénégal, Bénin, Mali et Burkina Faso avec détection d'anomalies et alertes en cas de non-conformité.
               Architecture orientée services assurant la traçabilité des contrôles et contribuant à la sécurisation du
               marché.
             </p>
-            <button class="show-more-btn" onclick="toggleDescription('desc-1', this)">voir plus</button>
+            <button class="show-more-btn" onclick="toggleDescription('desc-2', this)">voir plus</button>
             <div class="project-tags">
               <span class="project-tag">Python</span>
               <span class="project-tag">Django</span>
               <span class="project-tag">REST API</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">HTML</span>
               <span class="project-tag">Mobile</span>
             </div>
           </div>
         </div>
 
-        <!-- Project 2: Excelsis -->
+        <!-- Project 3: Excelsis -->
         <div class="project-card reveal">
           <div class="project-image-wrapper">
             <img src="assets/project-excelsis.png" alt="Excelsis — Gestion Médicale" class="project-image">
@@ -216,22 +247,25 @@
           <div class="project-info">
             <span class="project-category">Santé · Gestion médicale</span>
             <h3 class="project-name">Excelsis</h3>
-            <p class="project-description" id="desc-2">
+            <p class="project-description" id="desc-3">
               Conception et développement d'une application web de gestion de rendez-vous et consultations médicales.
               Développement d'API back-end sécurisées pour patients, praticiens et spécialités. Mise en place d'un
               tableau de bord analytique avec gestion des rôles, permissions et sécurisation des données médicales.
             </p>
-            <button class="show-more-btn" onclick="toggleDescription('desc-2', this)">voir plus</button>
+            <button class="show-more-btn" onclick="toggleDescription('desc-3', this)">voir plus</button>
             <div class="project-tags">
               <span class="project-tag">Python</span>
               <span class="project-tag">Django</span>
+              <span class="project-tag">REST API</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">HTML</span>
               <span class="project-tag">PostgreSQL</span>
               <span class="project-tag">Sécurité</span>
             </div>
           </div>
         </div>
 
-        <!-- Project 3: TAF Africa Global -->
+        <!-- Project 4: TAF Africa Global -->
         <div class="project-card reveal">
           <div class="project-image-wrapper">
             <img src="assets/project-taf.png" alt="TAF Africa Global" class="project-image">
@@ -240,46 +274,50 @@
           <div class="project-info">
             <span class="project-category">Immobilier · Recherche avancée</span>
             <h3 class="project-name">TAF Africa Global</h3>
-            <p class="project-description" id="desc-3">
+            <p class="project-description" id="desc-4">
               Plateforme web de recherche et de localisation de biens immobiliers. Implémentation de filtres avancés par
               localisation, type de bien et budget. Gestion des annonces et mise en relation des utilisateurs avec une
               architecture évolutive orientée services.
             </p>
-            <button class="show-more-btn" onclick="toggleDescription('desc-3', this)">voir plus</button>
+            <button class="show-more-btn" onclick="toggleDescription('desc-4', this)">voir plus</button>
             <div class="project-tags">
               <span class="project-tag">Python</span>
               <span class="project-tag">Django</span>
-              <span class="project-tag">JavaScript</span>
               <span class="project-tag">REST API</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">JavaScript</span>
             </div>
           </div>
         </div>
 
-        <!-- Project 4: Defaru -->
+        <!-- Project 5: Defaru -->
         <div class="project-card reveal">
           <div class="project-image-wrapper">
             <img src="assets/project-defaru.png" alt="Defaru — E-learning" class="project-image">
             <span class="project-image-overlay">E-learning</span>
           </div>
           <div class="project-info">
-            <span class="project-category">Formation · Web & Mobile</span>
+            <span class="project-category">Formation · Web &amp; Mobile</span>
             <h3 class="project-name">Defaru</h3>
-            <p class="project-description" id="desc-4">
+            <p class="project-description" id="desc-5">
               Plateforme de formation en ligne proposant des modules gratuits en Soft Skills. Développement de la
               version web et intégration mobile Android et iOS. Gestion des utilisateurs, contenus et progression des
               apprenants pour une expérience d'apprentissage fluide.
             </p>
-            <button class="show-more-btn" onclick="toggleDescription('desc-4', this)">voir plus</button>
+            <button class="show-more-btn" onclick="toggleDescription('desc-5', this)">voir plus</button>
             <div class="project-tags">
               <span class="project-tag">Python</span>
               <span class="project-tag">Django</span>
-              <span class="project-tag">Mobile</span>
               <span class="project-tag">REST API</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">Mobile</span>
             </div>
           </div>
         </div>
 
-        <!-- Project 5: Niafey -->
+        <!-- Project 6: Niafey -->
         <div class="project-card reveal">
           <div class="project-image-wrapper">
             <img src="assets/project-niafey.png" alt="Niafey — Services à domicile" class="project-image">
@@ -288,22 +326,25 @@
           <div class="project-info">
             <span class="project-category">Services à domicile · Mobile</span>
             <h3 class="project-name">Niafey</h3>
-            <p class="project-description" id="desc-5">
+            <p class="project-description" id="desc-6">
               Application mobile de mise en relation entre particuliers et prestataires de services à domicile. Gestion
               des profils, prestations, évaluations et disponibilités. Contribution à l'architecture back-end et à la
               sécurisation des échanges.
             </p>
-            <button class="show-more-btn" onclick="toggleDescription('desc-5', this)">voir plus</button>
+            <button class="show-more-btn" onclick="toggleDescription('desc-6', this)">voir plus</button>
             <div class="project-tags">
               <span class="project-tag">Python</span>
               <span class="project-tag">Django</span>
+              <span class="project-tag">REST API</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">HTML</span>
               <span class="project-tag">Mobile</span>
               <span class="project-tag">Sécurité</span>
             </div>
           </div>
         </div>
 
-        <!-- Project 6: EasyMarket -->
+        <!-- Project 7: EasyMarket -->
         <div class="project-card reveal">
           <div class="project-image-wrapper">
             <img src="assets/project-easymarket.png" alt="EasyMarket — E-commerce" class="project-image">
@@ -312,45 +353,20 @@
           <div class="project-info">
             <span class="project-category">E-commerce · Paiement</span>
             <h3 class="project-name">EasyMarket</h3>
-            <p class="project-description" id="desc-6">
+            <p class="project-description" id="desc-7">
               Solution e-commerce complète avec gestion automatisée des stocks et intégration des passerelles de
               paiement Stripe, Wave et Paygate. Architecture robuste et scalable pour une expérience d'achat fluide et
               sécurisée.
             </p>
-            <button class="show-more-btn" onclick="toggleDescription('desc-6', this)">voir plus</button>
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">Django</span>
-              <span class="project-tag">Stripe</span>
-              <span class="project-tag">PostgreSQL</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 7: HappyPro -->
-        <div class="project-card reveal">
-          <div class="project-image-wrapper">
-            <img src="assets/project-happypro.png" alt="HappyPro — Services de ménage" class="project-image">
-            <span class="project-image-overlay">SaaS · Marketplace</span>
-          </div>
-          <div class="project-info">
-            <span class="project-category">Services · SaaS · Marketplace</span>
-            <h3 class="project-name">HappyPro</h3>
-            <p class="project-description" id="desc-7">
-              Plateforme SaaS d'automatisation des services de ménage et blanchisserie pour les propriétaires de
-              locations courte durée. Synchronisation avec les calendriers Airbnb et Booking.com, gestion de la qualité
-              avec rapports photo, et réseau de professionnels qualifiés. Intégration de Stripe Connect pour la gestion
-              des paiements marketplace. Déployée à Toulouse, Paris, Cannes et Montpellier.
-            </p>
             <button class="show-more-btn" onclick="toggleDescription('desc-7', this)">voir plus</button>
             <div class="project-tags">
-              <span class="project-tag">Django</span>
               <span class="project-tag">Python</span>
-              <span class="project-tag">Redis</span>
-              <span class="project-tag">Celery</span>
-              <span class="project-tag">Docker</span>
+              <span class="project-tag">Django</span>
               <span class="project-tag">REST API</span>
-              <span class="project-tag">Stripe Connect</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">Stripe</span>
+              <span class="project-tag">PostgreSQL</span>
             </div>
           </div>
         </div>
@@ -395,7 +411,7 @@
       <div class="experience-grid">
 
         <div class="experience-card reveal">
-          <p class="experience-date">2023 – Présent</p>
+          <p class="experience-date">2023 – 2026</p>
           <h3 class="experience-title">Lead Développeur</h3>
           <p class="experience-company">Volkeno — Dakar, Sénégal</p>
           <div class="experience-description">
