@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mardochée KIKIGBAGBAN — Développeur Full-stack Python</title>
+  <meta name="description"
+    content="Développeur Full-stack spécialisé en Python et Django. Conception d'architectures applicatives robustes, sécurisées et scalables.">
+  <meta property="og:title" content="Mardochée KIKIGBAGBAN — Développeur Full-stack Python">
+  <meta property="og:description"
+    content="Développeur Full-stack spécialisé en Python et Django, avec une solide expérience en conception d'architectures applicatives.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════
+       FLOATING NAVIGATION
+       ═══════════════════════════════════════ -->
+  <nav class="floating-nav" id="floating-nav">
+    <a href="#hero" class="nav-link active" title="Accueil" aria-label="Accueil">
+      <svg viewBox="0 0 24 24">
+        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/in/mardocheekg" target="_blank" class="nav-link" title="LinkedIn"
+      aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+      </svg>
+    </a>
+    <a href="https://github.com/CHRISTMardochee" target="_blank" class="nav-link" title="GitHub" aria-label="GitHub">
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z" />
+      </svg>
+    </a>
+    <a href="mailto:kgmardochee@gmail.com" class="nav-link" title="Email" aria-label="Email">
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+      </svg>
+    </a>
+    <a href="#projects" class="nav-projects-btn">Projets</a>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-greeting">Bonjour, je suis</p>
+          <h1 class="hero-name">MARDOCHÉE KIKIGBAGBAN</h1>
+          <h2 class="hero-title">Développeur Full-stack Python</h2>
+          <p class="hero-description">
+            Développeur Full-stack spécialisé en Python et Django, avec une solide expérience en conception
+            d'architectures applicatives MVC, n-tiers et REST. Habitué à intervenir sur des projets à fort impact —
+            santé, industrie, e-learning, e-commerce — et à déployer mes propres APIs de bout en bout.
+          </p>
+          <div class="hero-actions">
+            <a href="https://drive.google.com/file/d/1Ag8R6MFNLJssxXb631J21tH2jxMli9ai/view?usp=sharing" target="_blank"
+              class="btn-primary">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm4 18H6V4h7v5h5v11zm-3-7v4H9v-4H6l6-6 6 6h-3z" />
+              </svg>
+              CV
+            </a>
+            <span class="status-pill">
+              <span class="status-dot"></span>
+              Disponible
+            </span>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="hero-image-glow"></div>
+          <img src="assets/profile.png" alt="Mardochée KIKIGBAGBAN" class="hero-image">
+          <span class="floating-badge">architecture</span>
+          <span class="floating-badge">performance</span>
+          <span class="floating-badge">scalabilité</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       QUOTE SECTION
+       ═══════════════════════════════════════ -->
+  <section class="quote-section reveal">
+    <div class="container">
+      <div class="quote-card">
+        <span class="quote-marks quote-mark-open">"</span>
+        <p class="quote-text">
+          Je ne me contente pas de coder des fonctionnalités — je conçois des architectures pensées pour durer,
+          performer et évoluer. Chaque projet est une opportunité de repousser les limites de la qualité logicielle.
+        </p>
+        <span class="quote-marks quote-mark-close">"</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       TECH STACK MARQUEE
+       ═══════════════════════════════════════ -->
+  <section class="tech-marquee-section">
+    <div class="marquee-container">
+      <div class="marquee-track">
+        <span class="tech-item">🐍 Python</span>
+        <span class="tech-item">🎯 Django</span>
+        <span class="tech-item">⚡ JavaScript</span>
+        <span class="tech-item">🐘 PostgreSQL</span>
+        <span class="tech-item">🐳 Docker</span>
+        <span class="tech-item">🔀 Git</span>
+        <span class="tech-item">🍃 MongoDB</span>
+        <span class="tech-item">🐧 Linux</span>
+        <span class="tech-item">☕ Java</span>
+        <span class="tech-item">🌐 REST API</span>
+        <span class="tech-item">🎨 CSS</span>
+        <span class="tech-item">📄 HTML</span>
+        <span class="tech-item">🔐 Sécurité</span>
+        <span class="tech-item">🏗️ MVC</span>
+        <span class="tech-item">🗄️ MySQL</span>
+        <span class="tech-item">🔗 SSH</span>
+      </div>
+      <!-- Duplicate for seamless loop -->
+      <div class="marquee-track">
+        <span class="tech-item">🐍 Python</span>
+        <span class="tech-item">🎯 Django</span>
+        <span class="tech-item">⚡ JavaScript</span>
+        <span class="tech-item">🐘 PostgreSQL</span>
+        <span class="tech-item">🐳 Docker</span>
+        <span class="tech-item">🔀 Git</span>
+        <span class="tech-item">🍃 MongoDB</span>
+        <span class="tech-item">🐧 Linux</span>
+        <span class="tech-item">☕ Java</span>
+        <span class="tech-item">🌐 REST API</span>
+        <span class="tech-item">🎨 CSS</span>
+        <span class="tech-item">📄 HTML</span>
+        <span class="tech-item">🔐 Sécurité</span>
+        <span class="tech-item">🏗️ MVC</span>
+        <span class="tech-item">🗄️ MySQL</span>
+        <span class="tech-item">🔗 SSH</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT SECTION
+       ═══════════════════════════════════════ -->
+  <section class="about-section" id="about">
+    <div class="container reveal">
+      <h2 class="section-title">À propos <span class="emoji">👤</span></h2>
+      <p class="about-text">
+        Je suis un Développeur Full-stack spécialisé en Python et Django, passionné par la conception d'architectures
+        applicatives solides et évolutives. Avec plus de 5 ans d'expérience, j'ai eu l'opportunité de travailler sur des
+        projets à fort impact dans des domaines variés : santé, industrie, e-learning et e-commerce.
+        <br><br>
+        Mon approche combine rigueur technique et vision produit. Que ce soit pour développer des API REST performantes,
+        mettre en place des architectures MVC et n-tiers, ou accompagner la montée en compétences de mes collègues, je
+        m'efforce toujours de livrer des solutions robustes, sécurisées et conformes aux meilleures pratiques.
+        <br><br>
+        Basé à Dakar, Sénégal, je gère moi-même le déploiement de mes APIs et l'infrastructure serveur pour garantir une
+        mise en production fluide et fiable.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       PROJECTS SECTION
+       ═══════════════════════════════════════ -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">Projets <span class="emoji">🚀</span></h2>
+      <p class="projects-hint reveal">Survolez les images pour un aperçu détaillé</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Control Fer -->
+        <div class="project-card reveal">
+          <div class="project-image-wrapper">
+            <img src="assets/project-controlfer.png" alt="Control Fer — Fabrimetal" class="project-image">
+            <span class="project-image-overlay">Contrôle qualité</span>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Industrie · Mobile</span>
+            <h3 class="project-name">Control Fer — Fabrimetal</h3>
+            <p class="project-description" id="desc-1">
+              Application permettant aux citoyens de vérifier la conformité du fer aux normes de qualité. Déployée au
+              Sénégal, Bénin, Mali et Burkina Faso avec détection d'anomalies et alertes en cas de non-conformité.
+              Architecture orientée services assurant la traçabilité des contrôles et contribuant à la sécurisation du
+              marché.
+            </p>
+            <button class="show-more-btn" onclick="toggleDescription('desc-1', this)">voir plus</button>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Django</span>
+              <span class="project-tag">REST API</span>
+              <span class="project-tag">Mobile</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Excelsis -->
+        <div class="project-card reveal">
+          <div class="project-image-wrapper">
+            <img src="assets/project-excelsis.png" alt="Excelsis — Gestion Médicale" class="project-image">
+            <span class="project-image-overlay">Santé</span>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Santé · Gestion médicale</span>
+            <h3 class="project-name">Excelsis</h3>
+            <p class="project-description" id="desc-2">
+              Conception et développement d'une application web de gestion de rendez-vous et consultations médicales.
+              Développement d'API back-end sécurisées pour patients, praticiens et spécialités. Mise en place d'un
+              tableau de bord analytique avec gestion des rôles, permissions et sécurisation des données médicales.
+            </p>
+            <button class="show-more-btn" onclick="toggleDescription('desc-2', this)">voir plus</button>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Django</span>
+              <span class="project-tag">PostgreSQL</span>
+              <span class="project-tag">Sécurité</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: TAF Africa Global -->
+        <div class="project-card reveal">
+          <div class="project-image-wrapper">
+            <img src="assets/project-taf.png" alt="TAF Africa Global" class="project-image">
+            <span class="project-image-overlay">Immobilier</span>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Immobilier · Recherche avancée</span>
+            <h3 class="project-name">TAF Africa Global</h3>
+            <p class="project-description" id="desc-3">
+              Plateforme web de recherche et de localisation de biens immobiliers. Implémentation de filtres avancés par
+              localisation, type de bien et budget. Gestion des annonces et mise en relation des utilisateurs avec une
+              architecture évolutive orientée services.
+            </p>
+            <button class="show-more-btn" onclick="toggleDescription('desc-3', this)">voir plus</button>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Django</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Defaru -->
+        <div class="project-card reveal">
+          <div class="project-image-wrapper">
+            <img src="assets/project-defaru.png" alt="Defaru — E-learning" class="project-image">
+            <span class="project-image-overlay">E-learning</span>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Formation · Web & Mobile</span>
+            <h3 class="project-name">Defaru</h3>
+            <p class="project-description" id="desc-4">
+              Plateforme de formation en ligne proposant des modules gratuits en Soft Skills. Développement de la
+              version web et intégration mobile Android et iOS. Gestion des utilisateurs, contenus et progression des
+              apprenants pour une expérience d'apprentissage fluide.
+            </p>
+            <button class="show-more-btn" onclick="toggleDescription('desc-4', this)">voir plus</button>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Django</span>
+              <span class="project-tag">Mobile</span>
+              <span class="project-tag">REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Niafey -->
+        <div class="project-card reveal">
+          <div class="project-image-wrapper">
+            <img src="assets/project-niafey.png" alt="Niafey — Services à domicile" class="project-image">
+            <span class="project-image-overlay">Services</span>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Services à domicile · Mobile</span>
+            <h3 class="project-name">Niafey</h3>
+            <p class="project-description" id="desc-5">
+              Application mobile de mise en relation entre particuliers et prestataires de services à domicile. Gestion
+              des profils, prestations, évaluations et disponibilités. Contribution à l'architecture back-end et à la
+              sécurisation des échanges.
+            </p>
+            <button class="show-more-btn" onclick="toggleDescription('desc-5', this)">voir plus</button>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Django</span>
+              <span class="project-tag">Mobile</span>
+              <span class="project-tag">Sécurité</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: EasyMarket -->
+        <div class="project-card reveal">
+          <div class="project-image-wrapper">
+            <img src="assets/project-easymarket.png" alt="EasyMarket — E-commerce" class="project-image">
+            <span class="project-image-overlay">E-commerce</span>
+          </div>
+          <div class="project-info">
+            <span class="project-category">E-commerce · Paiement</span>
+            <h3 class="project-name">EasyMarket</h3>
+            <p class="project-description" id="desc-6">
+              Solution e-commerce complète avec gestion automatisée des stocks et intégration des passerelles de
+              paiement Stripe, Wave et Paygate. Architecture robuste et scalable pour une expérience d'achat fluide et
+              sécurisée.
+            </p>
+            <button class="show-more-btn" onclick="toggleDescription('desc-6', this)">voir plus</button>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Django</span>
+              <span class="project-tag">Stripe</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: HappyPro -->
+        <div class="project-card reveal">
+          <div class="project-image-wrapper">
+            <img src="assets/project-happypro.png" alt="HappyPro — Services de ménage" class="project-image">
+            <span class="project-image-overlay">SaaS · Marketplace</span>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Services · SaaS · Marketplace</span>
+            <h3 class="project-name">HappyPro</h3>
+            <p class="project-description" id="desc-7">
+              Plateforme SaaS d'automatisation des services de ménage et blanchisserie pour les propriétaires de
+              locations courte durée. Synchronisation avec les calendriers Airbnb et Booking.com, gestion de la qualité
+              avec rapports photo, et réseau de professionnels qualifiés. Intégration de Stripe Connect pour la gestion
+              des paiements marketplace. Déployée à Toulouse, Paris, Cannes et Montpellier.
+            </p>
+            <button class="show-more-btn" onclick="toggleDescription('desc-7', this)">voir plus</button>
+            <div class="project-tags">
+              <span class="project-tag">Django</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Redis</span>
+              <span class="project-tag">Celery</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">REST API</span>
+              <span class="project-tag">Stripe Connect</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       EDUCATION SECTION
+       ═══════════════════════════════════════ -->
+  <section class="education-section" id="education">
+    <div class="container">
+      <h2 class="section-title reveal">Formation <span class="emoji">🎓</span></h2>
+      <div class="education-grid">
+        <div class="education-card reveal">
+          <div class="education-icon">🎓</div>
+          <div class="education-details">
+            <h3 class="education-degree">Master en Réseaux et Systèmes Décisionnels</h3>
+            <p class="education-school">ISM — Dakar, Sénégal</p>
+            <p class="education-date">2019 – 2020</p>
+          </div>
+        </div>
+        <div class="education-card reveal">
+          <div class="education-icon">🎓</div>
+          <div class="education-details">
+            <h3 class="education-degree">Licence en Développement d'Applications Réparties</h3>
+            <p class="education-school">ESMT — Dakar, Sénégal</p>
+            <p class="education-date">2015 – 2018</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       WORK EXPERIENCE SECTION
+       ═══════════════════════════════════════ -->
+  <section class="experience-section" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal">Expérience Professionnelle <span class="emoji">💼</span></h2>
+      <div class="experience-grid">
+
+        <div class="experience-card reveal">
+          <p class="experience-date">2023 – Présent</p>
+          <h3 class="experience-title">Lead Développeur</h3>
+          <p class="experience-company">Volkeno — Dakar, Sénégal</p>
+          <div class="experience-description">
+            <ul>
+              <li>Lead junior : accompagnement et montée en compétences des développeurs de l'équipe</li>
+              <li>Conception d'architectures applicatives basées sur des API REST</li>
+              <li>Définition des choix techniques : sécurité, performance, scalabilité</li>
+              <li>Revue de code et mentorat technique</li>
+              <li>Déploiement et administration des APIs en production (DevOps)</li>
+              <li>Garantie du respect des délais et des normes de qualité</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-card reveal">
+          <p class="experience-date">2020 – 2022</p>
+          <h3 class="experience-title">Développeur Back-end</h3>
+          <p class="experience-company">Volkeno — Dakar, Sénégal</p>
+          <div class="experience-description">
+            <ul>
+              <li>Développement de plus de <strong>30 API REST</strong> avec Django</li>
+              <li>Implémentation d'architectures MVC et n-tiers</li>
+              <li>Intégration avec des interfaces front-end en JavaScript</li>
+              <li>Optimisation des performances applicatives et des bases de données</li>
+              <li>Participation active aux phases de conception technique</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-cta reveal">
+          Votre entreprise ensuite ? 🤝
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CERTIFICATIONS SECTION
+       ═══════════════════════════════════════ -->
+  <section class="certifications-section" id="certifications">
+    <div class="container">
+      <h2 class="section-title reveal">Certifications <span class="emoji">🏆</span></h2>
+      <div class="certifications-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon">🤖</div>
+          <h3 class="cert-name">Python for Data Science, AI & Development</h3>
+          <p class="cert-year">2025</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">⚙️</div>
+          <h3 class="cert-name">Introduction au DevOps</h3>
+          <p class="cert-year">2024</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">☁️</div>
+          <h3 class="cert-name">Cloud Computing</h3>
+          <p class="cert-year">2024</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">🔄</div>
+          <h3 class="cert-name">Agile Development and Scrum (Honors)</h3>
+          <p class="cert-year">2024</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">🔧</div>
+          <h3 class="cert-name">Back-End Development</h3>
+          <p class="cert-year">2024</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">💻</div>
+          <h3 class="cert-name">Software Engineering (Honors)</h3>
+          <p class="cert-year">2024</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">🐧</div>
+          <h3 class="cert-name">Linux Commands and Shell Scripting</h3>
+          <p class="cert-year">2024</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">🔀</div>
+          <h3 class="cert-name">Git et GitHub</h3>
+          <p class="cert-year">2024</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT / FOOTER
+       ═══════════════════════════════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <p class="contact-eyebrow">Vous êtes arrivé jusqu'ici !</p>
+        <h2 class="contact-heading">Travaillons ensemble 🤝</h2>
+        <p class="contact-subtext">N'hésitez pas à me contacter pour discuter de vos projets ou opportunités de
+          collaboration.</p>
+        <div class="contact-links">
+          <a href="mailto:kgmardochee@gmail.com" class="contact-link">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+            kgmardochee@gmail.com
+          </a>
+          <a href="tel:+221771385310" class="contact-link">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+            +221 77 138 53 10
+          </a>
+          <a href="https://www.linkedin.com/in/mardocheekg" target="_blank" class="contact-link">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+            </svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/mardocheekg" target="_blank" class="contact-link">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z" />
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2026 Mardochée KIKIGBAGBAN. Crafted with 💜 from Dakar, Sénégal.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
