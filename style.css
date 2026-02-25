@@ -194,6 +194,43 @@ section {
   transform: scale(1.03);
 }
 
+/* ── Language Switcher ── */
+.language-switcher {
+  display: flex;
+  gap: 4px;
+  margin-left: 8px;
+  padding-left: 12px;
+  border-left: 1px solid var(--border-light);
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid transparent;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: var(--font);
+}
+
+.lang-btn:hover {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.lang-btn.active {
+  background: var(--accent-blue);
+  color: white;
+  border-color: var(--accent-blue);
+}
+
 /* ============================================
    HERO SECTION
    ============================================ */
@@ -1050,6 +1087,18 @@ section {
   .nav-projects-btn {
     padding: 8px 16px;
     font-size: 0.82rem;
+  }
+
+  .language-switcher {
+    gap: 3px;
+    margin-left: 6px;
+    padding-left: 8px;
+  }
+
+  .lang-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 0.75rem;
   }
 
   section {

@@ -46,7 +46,11 @@
           d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
       </svg>
     </a>
-    <a href="#projects" class="nav-projects-btn">Projets</a>
+    <a href="#projects" class="nav-projects-btn" data-i18n="nav.projects">Projets</a>
+    <div class="language-switcher">
+      <button class="lang-btn active" data-lang="fr" title="Français">FR</button>
+      <button class="lang-btn" data-lang="en" title="English">EN</button>
+    </div>
   </nav>
 
   <!-- ═══════════════════════════════════════
@@ -56,26 +60,26 @@
     <div class="container">
       <div class="hero-content">
         <div class="hero-text">
-          <p class="hero-greeting">Bonjour, je suis</p>
+          <p class="hero-greeting" data-i18n="hero.greeting">Bonjour, je suis</p>
           <h1 class="hero-name">MARDOCHÉE KIKIGBAGBAN</h1>
-          <h2 class="hero-title">Développeur Full-stack Python</h2>
-          <p class="hero-description">
+          <h2 class="hero-title" data-i18n="hero.title">Développeur Full-stack Python</h2>
+          <p class="hero-description" data-i18n="hero.description">
             Développeur Full-stack spécialisé en Python et Django, avec une solide expérience en conception
             d'architectures applicatives MVC, n-tiers et REST. Habitué à intervenir sur des projets à fort impact —
             santé, industrie, e-learning, e-commerce — et à déployer mes propres APIs de bout en bout.
           </p>
           <div class="hero-actions">
             <a href="https://drive.google.com/file/d/1qp8ai0nZzGAaGM_a9to52p35QEqWWVec/view?usp=sharing" target="_blank"
-              class="btn-primary">
+              class="btn-primary" id="cv-btn" data-cv-fr="https://drive.google.com/file/d/1qp8ai0nZzGAaGM_a9to52p35QEqWWVec/view?usp=sharing" data-cv-en="https://drive.google.com/file/d/1BfJc4fCaWBTvkbSUSANu7HnoYtaGiN4M/view?usp=sharing">
               <svg viewBox="0 0 24 24">
                 <path
                   d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm4 18H6V4h7v5h5v11zm-3-7v4H9v-4H6l6-6 6 6h-3z" />
               </svg>
-              CV
+              <span data-i18n="hero.cv">CV</span>
             </a>
             <span class="status-pill">
               <span class="status-dot"></span>
-              Disponible
+              <span data-i18n="hero.available">Disponible</span>
             </span>
           </div>
         </div>
@@ -97,7 +101,7 @@
     <div class="container">
       <div class="quote-card">
         <span class="quote-marks quote-mark-open">"</span>
-        <p class="quote-text">
+        <p class="quote-text" data-i18n="quote.text">
           Je ne me contente pas de coder des fonctionnalités — je conçois des architectures pensées pour durer,
           performer et évoluer. Chaque projet est une opportunité de repousser les limites de la qualité logicielle.
         </p>
@@ -156,8 +160,8 @@
        ═══════════════════════════════════════ -->
   <section class="about-section" id="about">
     <div class="container reveal">
-      <h2 class="section-title">À propos <span class="emoji">👤</span></h2>
-      <p class="about-text">
+      <h2 class="section-title"><span data-i18n="about.title">À propos</span> <span class="emoji">👤</span></h2>
+      <p class="about-text" data-i18n="about.text">
         Je suis un Développeur Full-stack spécialisé en Python et Django, passionné par la conception d'architectures
         applicatives solides et évolutives. Avec plus de 5 ans d'expérience, j'ai eu l'opportunité de travailler sur des
         projets à fort impact dans des domaines variés : santé, industrie, e-learning et e-commerce.
@@ -177,8 +181,8 @@
        ═══════════════════════════════════════ -->
   <section class="projects-section" id="projects">
     <div class="container">
-      <h2 class="section-title reveal">Projets <span class="emoji">🚀</span></h2>
-      <p class="projects-hint reveal">Survolez les images pour un aperçu détaillé</p>
+      <h2 class="section-title reveal"><span data-i18n="projects.title">Projets</span> <span class="emoji">🚀</span></h2>
+      <p class="projects-hint reveal" data-i18n="projects.hint">Survolez les images pour un aperçu détaillé</p>
 
       <div class="projects-grid">
 
@@ -189,15 +193,15 @@
             <span class="project-image-overlay">Automatisation · Ménage</span>
           </div>
           <div class="project-info">
-            <span class="project-category">Automatisation · Ménage · Blanchisserie</span>
+            <span class="project-category" data-i18n="projects.happypro.category">Automatisation · Ménage · Blanchisserie</span>
             <h3 class="project-name">HappyPro</h3>
-            <p class="project-description" id="desc-1">
+            <p class="project-description" id="desc-1" data-i18n="projects.happypro.description">
               Plateforme SaaS d'automatisation des services de ménage et blanchisserie pour les propriétaires de
               locations courte durée. Synchronisation avec les calendriers Airbnb et Booking.com, gestion de la qualité
               avec rapports photo, et réseau de professionnels qualifiés. Intégration de Stripe Connect pour la gestion
               des paiements marketplace. Déployée à Toulouse, Paris, Cannes et Montpellier.
             </p>
-            <button class="show-more-btn" onclick="toggleDescription('desc-1', this)">voir plus</button>
+            <button class="show-more-btn" onclick="toggleDescription('desc-1', this)" data-i18n="btn.more">voir plus</button>
             <div class="project-tags">
               <span class="project-tag">Django</span>
               <span class="project-tag">Python</span>
@@ -218,15 +222,15 @@
             <span class="project-image-overlay">Contrôle qualité</span>
           </div>
           <div class="project-info">
-            <span class="project-category">Industrie · Mobile</span>
+            <span class="project-category" data-i18n="projects.controlfer.category">Industrie · Mobile</span>
             <h3 class="project-name">Control Fer — Fabrimetal</h3>
-            <p class="project-description" id="desc-2">
+            <p class="project-description" id="desc-2" data-i18n="projects.controlfer.description">
               Application permettant aux citoyens de vérifier la conformité du fer aux normes de qualité. Déployée au
               Sénégal, Bénin, Mali et Burkina Faso avec détection d'anomalies et alertes en cas de non-conformité.
               Architecture orientée services assurant la traçabilité des contrôles et contribuant à la sécurisation du
               marché.
             </p>
-            <button class="show-more-btn" onclick="toggleDescription('desc-2', this)">voir plus</button>
+            <button class="show-more-btn" onclick="toggleDescription('desc-2', this)" data-i18n="btn.more">voir plus</button>
             <div class="project-tags">
               <span class="project-tag">Python</span>
               <span class="project-tag">Django</span>
@@ -245,14 +249,14 @@
             <span class="project-image-overlay">Santé</span>
           </div>
           <div class="project-info">
-            <span class="project-category">Santé · Gestion médicale</span>
+            <span class="project-category" data-i18n="projects.excelsis.category">Santé · Gestion médicale</span>
             <h3 class="project-name">Excelsis</h3>
-            <p class="project-description" id="desc-3">
+            <p class="project-description" id="desc-3" data-i18n="projects.excelsis.description">
               Conception et développement d'une application web de gestion de rendez-vous et consultations médicales.
               Développement d'API back-end sécurisées pour patients, praticiens et spécialités. Mise en place d'un
               tableau de bord analytique avec gestion des rôles, permissions et sécurisation des données médicales.
             </p>
-            <button class="show-more-btn" onclick="toggleDescription('desc-3', this)">voir plus</button>
+            <button class="show-more-btn" onclick="toggleDescription('desc-3', this)" data-i18n="btn.more">voir plus</button>
             <div class="project-tags">
               <span class="project-tag">Python</span>
               <span class="project-tag">Django</span>
@@ -272,14 +276,14 @@
             <span class="project-image-overlay">Immobilier</span>
           </div>
           <div class="project-info">
-            <span class="project-category">Immobilier · Recherche avancée</span>
+            <span class="project-category" data-i18n="projects.taf.category">Immobilier · Recherche avancée</span>
             <h3 class="project-name">TAF Africa Global</h3>
-            <p class="project-description" id="desc-4">
+            <p class="project-description" id="desc-4" data-i18n="projects.taf.description">
               Plateforme web de recherche et de localisation de biens immobiliers. Implémentation de filtres avancés par
               localisation, type de bien et budget. Gestion des annonces et mise en relation des utilisateurs avec une
               architecture évolutive orientée services.
             </p>
-            <button class="show-more-btn" onclick="toggleDescription('desc-4', this)">voir plus</button>
+            <button class="show-more-btn" onclick="toggleDescription('desc-4', this)" data-i18n="btn.more">voir plus</button>
             <div class="project-tags">
               <span class="project-tag">Python</span>
               <span class="project-tag">Django</span>
@@ -298,14 +302,14 @@
             <span class="project-image-overlay">E-learning</span>
           </div>
           <div class="project-info">
-            <span class="project-category">Formation · Web &amp; Mobile</span>
+            <span class="project-category" data-i18n="projects.defaru.category">Formation · Web &amp; Mobile</span>
             <h3 class="project-name">Defaru</h3>
-            <p class="project-description" id="desc-5">
+            <p class="project-description" id="desc-5" data-i18n="projects.defaru.description">
               Plateforme de formation en ligne proposant des modules gratuits en Soft Skills. Développement de la
               version web et intégration mobile Android et iOS. Gestion des utilisateurs, contenus et progression des
               apprenants pour une expérience d'apprentissage fluide.
             </p>
-            <button class="show-more-btn" onclick="toggleDescription('desc-5', this)">voir plus</button>
+            <button class="show-more-btn" onclick="toggleDescription('desc-5', this)" data-i18n="btn.more">voir plus</button>
             <div class="project-tags">
               <span class="project-tag">Python</span>
               <span class="project-tag">Django</span>
@@ -324,14 +328,14 @@
             <span class="project-image-overlay">Services</span>
           </div>
           <div class="project-info">
-            <span class="project-category">Services à domicile · Mobile</span>
+            <span class="project-category" data-i18n="projects.niafey.category">Services à domicile · Mobile</span>
             <h3 class="project-name">Niafey</h3>
-            <p class="project-description" id="desc-6">
+            <p class="project-description" id="desc-6" data-i18n="projects.niafey.description">
               Application mobile de mise en relation entre particuliers et prestataires de services à domicile. Gestion
               des profils, prestations, évaluations et disponibilités. Contribution à l'architecture back-end et à la
               sécurisation des échanges.
             </p>
-            <button class="show-more-btn" onclick="toggleDescription('desc-6', this)">voir plus</button>
+            <button class="show-more-btn" onclick="toggleDescription('desc-6', this)" data-i18n="btn.more">voir plus</button>
             <div class="project-tags">
               <span class="project-tag">Python</span>
               <span class="project-tag">Django</span>
@@ -351,14 +355,14 @@
             <span class="project-image-overlay">E-commerce</span>
           </div>
           <div class="project-info">
-            <span class="project-category">E-commerce · Paiement</span>
+            <span class="project-category" data-i18n="projects.easymarket.category">E-commerce · Paiement</span>
             <h3 class="project-name">EasyMarket</h3>
-            <p class="project-description" id="desc-7">
+            <p class="project-description" id="desc-7" data-i18n="projects.easymarket.description">
               Solution e-commerce complète avec gestion automatisée des stocks et intégration des passerelles de
               paiement Stripe, Wave et Paygate. Architecture robuste et scalable pour une expérience d'achat fluide et
               sécurisée.
             </p>
-            <button class="show-more-btn" onclick="toggleDescription('desc-7', this)">voir plus</button>
+            <button class="show-more-btn" onclick="toggleDescription('desc-7', this)" data-i18n="btn.more">voir plus</button>
             <div class="project-tags">
               <span class="project-tag">Python</span>
               <span class="project-tag">Django</span>
@@ -380,21 +384,21 @@
        ═══════════════════════════════════════ -->
   <section class="education-section" id="education">
     <div class="container">
-      <h2 class="section-title reveal">Formation <span class="emoji">🎓</span></h2>
+      <h2 class="section-title reveal"><span data-i18n="education.title">Formation</span> <span class="emoji">🎓</span></h2>
       <div class="education-grid">
         <div class="education-card reveal">
           <div class="education-icon">🎓</div>
           <div class="education-details">
-            <h3 class="education-degree">Master en Réseaux et Systèmes Décisionnels</h3>
-            <p class="education-school">ISM — Dakar, Sénégal</p>
+            <h3 class="education-degree" data-i18n="education.master.degree">Master en Réseaux et Systèmes Décisionnels</h3>
+            <p class="education-school" data-i18n="education.master.school">ISM — Dakar, Sénégal</p>
             <p class="education-date">2019 – 2020</p>
           </div>
         </div>
         <div class="education-card reveal">
           <div class="education-icon">🎓</div>
           <div class="education-details">
-            <h3 class="education-degree">Licence en Développement d'Applications Réparties</h3>
-            <p class="education-school">ESMT — Dakar, Sénégal</p>
+            <h3 class="education-degree" data-i18n="education.license.degree">Licence en Développement d'Applications Réparties</h3>
+            <p class="education-school" data-i18n="education.license.school">ESMT — Dakar, Sénégal</p>
             <p class="education-date">2015 – 2018</p>
           </div>
         </div>
@@ -407,14 +411,14 @@
        ═══════════════════════════════════════ -->
   <section class="experience-section" id="experience">
     <div class="container">
-      <h2 class="section-title reveal">Expérience Professionnelle <span class="emoji">💼</span></h2>
+      <h2 class="section-title reveal"><span data-i18n="experience.title">Expérience Professionnelle</span> <span class="emoji">💼</span></h2>
       <div class="experience-grid">
 
         <div class="experience-card reveal">
           <p class="experience-date">2023 – 2026</p>
-          <h3 class="experience-title">Lead Développeur</h3>
-          <p class="experience-company">Volkeno — Dakar, Sénégal</p>
-          <div class="experience-description">
+          <h3 class="experience-title" data-i18n="experience.lead.title">Lead Développeur</h3>
+          <p class="experience-company" data-i18n="experience.lead.company">Volkeno — Dakar, Sénégal</p>
+          <div class="experience-description" data-i18n="experience.lead.description">
             <ul>
               <li>Lead junior : accompagnement et montée en compétences des développeurs de l'équipe</li>
               <li>Conception d'architectures applicatives basées sur des API REST</li>
@@ -428,9 +432,9 @@
 
         <div class="experience-card reveal">
           <p class="experience-date">2020 – 2022</p>
-          <h3 class="experience-title">Développeur Back-end</h3>
-          <p class="experience-company">Volkeno — Dakar, Sénégal</p>
-          <div class="experience-description">
+          <h3 class="experience-title" data-i18n="experience.backend.title">Développeur Back-end</h3>
+          <p class="experience-company" data-i18n="experience.backend.company">Volkeno — Dakar, Sénégal</p>
+          <div class="experience-description" data-i18n="experience.backend.description">
             <ul>
               <li>Développement de plus de <strong>30 API REST</strong> avec Django</li>
               <li>Implémentation d'architectures MVC et n-tiers</li>
@@ -441,7 +445,7 @@
           </div>
         </div>
 
-        <div class="experience-cta reveal">
+        <div class="experience-cta reveal" data-i18n="experience.cta">
           Votre entreprise ensuite ? 🤝
         </div>
 
@@ -454,46 +458,46 @@
        ═══════════════════════════════════════ -->
   <section class="certifications-section" id="certifications">
     <div class="container">
-      <h2 class="section-title reveal">Certifications <span class="emoji">🏆</span></h2>
+      <h2 class="section-title reveal"><span data-i18n="certifications.title">Certifications</span> <span class="emoji">🏆</span></h2>
       <div class="certifications-grid">
         <div class="cert-card reveal">
           <div class="cert-icon">🤖</div>
-          <h3 class="cert-name">Python for Data Science, AI & Development</h3>
+          <h3 class="cert-name" data-i18n="certifications.1.name">Python for Data Science, AI & Development</h3>
           <p class="cert-year">2025</p>
         </div>
         <div class="cert-card reveal">
           <div class="cert-icon">⚙️</div>
-          <h3 class="cert-name">Introduction au DevOps</h3>
+          <h3 class="cert-name" data-i18n="certifications.2.name">Introduction au DevOps</h3>
           <p class="cert-year">2024</p>
         </div>
         <div class="cert-card reveal">
           <div class="cert-icon">☁️</div>
-          <h3 class="cert-name">Cloud Computing</h3>
+          <h3 class="cert-name" data-i18n="certifications.3.name">Cloud Computing</h3>
           <p class="cert-year">2024</p>
         </div>
         <div class="cert-card reveal">
           <div class="cert-icon">🔄</div>
-          <h3 class="cert-name">Agile Development and Scrum (Honors)</h3>
+          <h3 class="cert-name" data-i18n="certifications.4.name">Agile Development and Scrum (Honors)</h3>
           <p class="cert-year">2024</p>
         </div>
         <div class="cert-card reveal">
           <div class="cert-icon">🔧</div>
-          <h3 class="cert-name">Back-End Development</h3>
+          <h3 class="cert-name" data-i18n="certifications.5.name">Back-End Development</h3>
           <p class="cert-year">2024</p>
         </div>
         <div class="cert-card reveal">
           <div class="cert-icon">💻</div>
-          <h3 class="cert-name">Software Engineering (Honors)</h3>
+          <h3 class="cert-name" data-i18n="certifications.6.name">Software Engineering (Honors)</h3>
           <p class="cert-year">2024</p>
         </div>
         <div class="cert-card reveal">
           <div class="cert-icon">🐧</div>
-          <h3 class="cert-name">Linux Commands and Shell Scripting</h3>
+          <h3 class="cert-name" data-i18n="certifications.7.name">Linux Commands and Shell Scripting</h3>
           <p class="cert-year">2024</p>
         </div>
         <div class="cert-card reveal">
           <div class="cert-icon">🔀</div>
-          <h3 class="cert-name">Git et GitHub</h3>
+          <h3 class="cert-name" data-i18n="certifications.8.name">Git et GitHub</h3>
           <p class="cert-year">2024</p>
         </div>
       </div>
@@ -506,9 +510,9 @@
   <section class="contact-section" id="contact">
     <div class="container">
       <div class="contact-inner reveal">
-        <p class="contact-eyebrow">Vous êtes arrivé jusqu'ici !</p>
-        <h2 class="contact-heading">Travaillons ensemble 🤝</h2>
-        <p class="contact-subtext">N'hésitez pas à me contacter pour discuter de vos projets ou opportunités de
+        <p class="contact-eyebrow" data-i18n="contact.eyebrow">Vous êtes arrivé jusqu'ici !</p>
+        <h2 class="contact-heading" data-i18n="contact.heading">Travaillons ensemble 🤝</h2>
+        <p class="contact-subtext" data-i18n="contact.subtext">N'hésitez pas à me contacter pour discuter de vos projets ou opportunités de
           collaboration.</p>
         <div class="contact-links">
           <a href="mailto:kgmardochee@gmail.com" class="contact-link">
@@ -546,7 +550,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p class="footer-text">© 2026 Mardochée KIKIGBAGBAN. Crafted with 💜 from Dakar, Sénégal.</p>
+      <p class="footer-text" data-i18n="footer.text">© 2026 Mardochée KIKIGBAGBAN. Crafted with 💜 from Dakar, Sénégal.</p>
     </div>
   </footer>
 
