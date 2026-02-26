@@ -397,22 +397,24 @@ section {
   white-space: nowrap;
 }
 
-.floating-badge:nth-child(2) {
-  top: 5%;
-  right: 0%;
+/* explicit badge positions to prevent them from leaving the container */
+/* use nth-of-type so that only badge spans are counted (ignores glow div and img) */
+.floating-badge:nth-of-type(1) {
+  top: 12%;
+  left: 2%;
   animation-delay: 0s;
 }
 
-.floating-badge:nth-child(3) {
-  bottom: 25%;
-  right: -5%;
-  animation-delay: 1.3s;
+.floating-badge:nth-of-type(2) {
+  top: 6%;
+  right: 4%;
+  animation-delay: 0.8s;
 }
 
-.floating-badge:nth-child(4) {
-  bottom: 8%;
-  left: 10%;
-  animation-delay: 2.6s;
+.floating-badge:nth-of-type(3) {
+  bottom: 20%;
+  right: 5%;
+  animation-delay: 1.6s;
 }
 
 @keyframes float {
@@ -660,6 +662,27 @@ section {
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 20px;
+}
+
+/* personal projects list styling */
+.personal-projects-container {
+  margin-top: 40px;
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* cards inside personal projects use same grid/style as main projects */
+.personal-projects-grid {
+  /* inherits .projects-grid */
+}
+
+/* optional override for personal cards (e.g. different background) */
+.personal-card {
+  /* keep same look as other project cards */
 }
 
 .project-tag {
@@ -1154,6 +1177,11 @@ section {
     font-size: 0.7rem;
     padding: 6px 12px;
   }
+
+  /* reposition badges on small screens to keep them inside */
+  .floating-badge:nth-of-type(1) { top: 5%; left: 3%; }
+  .floating-badge:nth-of-type(2) { top: 3%; right: 3%; }
+  .floating-badge:nth-of-type(3) { bottom: 15%; right: 3%; }
 
   .certifications-grid {
     grid-template-columns: 1fr;
