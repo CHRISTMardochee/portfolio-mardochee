@@ -6,10 +6,15 @@ export const metadata = {
   description: 'Développeur Full-stack spécialisé en Python et Django. 5+ ans d\'expérience, 30+ API REST, architectures MVC & n-tiers. Basé à Dakar, Sénégal.',
   keywords: 'Python, Django, Full-stack, Developer, REST API, Dakar, Senegal, Portfolio',
   authors: [{ name: 'Mardochée KIKIGBAGBAN' }],
+  icons: {
+    icon: '/portfolio-mardochee/icon.png',
+    apple: '/portfolio-mardochee/assets/profile.png',
+  },
   openGraph: {
     title: 'Mardochée KIKIGBAGBAN — Full-stack Python Developer',
     description: 'Full-stack developer specialized in Python/Django. 30+ REST APIs, MVC & n-tier architectures.',
     type: 'website',
+    images: [{ url: '/portfolio-mardochee/assets/profile.png', width: 400, height: 400 }],
   },
   manifest: '/portfolio-mardochee/manifest.json',
 };
