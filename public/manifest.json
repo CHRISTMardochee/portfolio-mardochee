@@ -1,0 +1,22 @@
+{
+    "name": "Mardochée Portfolio",
+    "short_name": "MK Portfolio",
+    "description": "Développeur Full-stack Python — Portfolio",
+    "start_url": "/portfolio-mardochee/",
+    "scope": "/portfolio-mardochee/",
+    "display": "standalone",
+    "background_color": "#050510",
+    "theme_color": "#050510",
+    "icons": [
+        {
+            "src": "/portfolio-mardochee/assets/profile.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/portfolio-mardochee/assets/profile.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

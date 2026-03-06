@@ -1,129 +1,36 @@
-# 🚀 Portfolio — Mardochée KIKIGBAGBAN
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Portfolio personnel de **Mardochée KIKIGBAGBAN**, Lead Développeur Full-stack Python basé à Dakar, Sénégal.
+## Getting Started
 
-> Site web statique construit en pur HTML / CSS / JavaScript — sans framework.
-
-![Portfolio Preview](assets/preview.png)
-
----
-
-## ✨ Fonctionnalités
-
-- **Navigation flottante** avec liens sociaux (LinkedIn, GitHub, Email) et accès rapide aux projets
-- **Hero section** avec photo de profil, badges flottants (architecture, performance, scalabilité) et statut de disponibilité
-- **Section citation** personnalisée
-- **Marquee tech stack** avec défilement automatique infini des technologies maîtrisées
-- **Section À propos** avec bio détaillée
-- **7 projets** présentés avec images réelles, descriptions, tags technologiques et bouton "voir plus"
-- **Formation** — ISM (Master) et ESMT (Licence)
-- **Expérience professionnelle** — Volkeno (Lead Dev & Backend Dev)
-- **8 certifications** — IBM, Coursera (Python, DevOps, Cloud, Agile, etc.)
-- **Section contact** avec email, téléphone et liens sociaux
-- **Animations** — scroll reveal, hover effects, marquee, floating badges
-- **Responsive** — adapté mobile, tablette et desktop
-
----
-
-## 🛠️ Technologies
-
-| Catégorie | Technologies |
-|-----------|-------------|
-| Structure | HTML5 sémantique |
-| Design | CSS3 (variables, grid, flexbox, animations, media queries) |
-| Interactivité | JavaScript vanilla (Intersection Observer, smooth scroll) |
-| Typographie | [Inter](https://fonts.google.com/specimen/Inter) (Google Fonts) |
-
----
-
-## 📁 Structure du projet
-
-```
-portfolio-mardochee/
-├── index.html          # Page unique du portfolio
-├── style.css           # Design system complet + responsive
-├── script.js           # Navigation, animations, interactions
-├── assets/
-│   ├── profile.png     # Photo de profil
-│   ├── project-controlfer.png
-│   ├── project-excelsis.png
-│   ├── project-taf.png
-│   ├── project-defaru.png
-│   ├── project-niafey.png
-│   ├── project-easymarket.png
-│   └── project-happypro.png
-├── README.md
-├── LICENSE
-└── .gitignore
-```
-
----
-
-## 🚀 Lancer le projet en local
+First, run the development server:
 
 ```bash
-# Cloner le dépôt
-git clone https://github.com/CHRISTMardochee/portfolio-mardochee.git
-cd portfolio-mardochee
-
-# Option 1 : Python
-python3 -m http.server 8080
-
-# Option 2 : Node.js
-npx serve .
-
-# Option 3 : VS Code
-# Installer l'extension "Live Server" et cliquer sur "Go Live"
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Ouvrir ensuite **http://localhost:8080** dans le navigateur.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
----
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-## 🌐 Déploiement
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### GitHub Pages (recommandé)
+## Learn More
 
-1. Pousser le code sur GitHub
-2. Aller dans **Settings → Pages**
-3. Source : **Deploy from a branch**
-4. Branche : `main` / dossier `/ (root)`
-5. Sauvegarder — le site sera disponible à `https://christmardochee.github.io/portfolio-mardochee/`
+To learn more about Next.js, take a look at the following resources:
 
-### Vercel (alternative)
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-1. Connecter le dépôt GitHub sur [vercel.com](https://vercel.com)
-2. Framework : **Other**
-3. Déployer — un domaine `.vercel.app` sera attribué automatiquement
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-### Netlify (alternative)
+## Deploy on Vercel
 
-1. Glisser-déposer le dossier du projet sur [app.netlify.com/drop](https://app.netlify.com/drop)
-2. Ou connecter le dépôt GitHub pour un déploiement continu
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
----
-
-## 📝 Personnalisation
-
-| Élément | Fichier | Section |
-|---------|---------|---------|
-| Informations personnelles | `index.html` | Hero, About, Contact |
-| Projets | `index.html` | Projects section |
-| Couleurs / Design | `style.css` | Variables CSS (`:root`) |
-| Animations | `style.css` | `@keyframes` |
-| Certifications | `index.html` | Certifications section |
-
----
-
-## 📄 Licence
-
-Ce projet est sous licence MIT — voir le fichier [LICENSE](LICENSE).
-
----
-
-## 👤 Contact
-
-- **Email** : kgmardochee@gmail.com
-- **Téléphone** : +221 77 138 53 10
-- **LinkedIn** : [linkedin.com/in/mardocheekg](https://www.linkedin.com/in/mardocheekg)
-- **GitHub** : [github.com/CHRISTMardochee](https://github.com/CHRISTMardochee)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
