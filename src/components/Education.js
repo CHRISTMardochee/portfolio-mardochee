@@ -14,7 +14,7 @@ export default function Education() {
                         <div>
                             <p className="education-degree">{t('education.master.degree')}</p>
                             <p className="education-school">{t('education.master.school')}</p>
-                            <p className="education-date">2019 — 2021</p>
+                            <p className="education-date">2019 — 2020</p>
                         </div>
                     </div>
                     <div className="education-card reveal">
@@ -22,7 +22,7 @@ export default function Education() {
                         <div>
                             <p className="education-degree">{t('education.license.degree')}</p>
                             <p className="education-school">{t('education.license.school')}</p>
-                            <p className="education-date">2016 — 2019</p>
+                            <p className="education-date">2015 — 2018</p>
                         </div>
                     </div>
                 </div>

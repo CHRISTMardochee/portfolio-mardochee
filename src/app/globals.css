@@ -890,6 +890,16 @@ body::after {
   transition: all 0.3s ease;
 }
 
+.experience-card.reveal {
+  transform: none;
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.experience-card.reveal.visible {
+  opacity: 1;
+}
+
 .experience-card:hover {
   border-color: var(--border-hover);
   transform: translateY(-2px);
@@ -945,6 +955,79 @@ body::after {
   font-style: italic;
   text-align: center;
   max-width: 460px;
+}
+
+/* ============================================
+   TEACHING SECTION
+   ============================================ */
+.teaching-section {
+  padding: 80px 0;
+  border-top: 1px solid var(--border);
+}
+
+.teaching-card {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  transition: all 0.3s ease;
+}
+
+.teaching-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+.teaching-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-glass);
+  border-radius: var(--radius-md);
+}
+
+.teaching-role {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.teaching-company {
+  font-size: 0.9rem;
+  color: var(--accent-light);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.teaching-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.teaching-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.teaching-tags span {
+  padding: 4px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /* ============================================
@@ -1176,11 +1259,26 @@ body::after {
   }
 
   .featured-visual {
-    min-height: 300px;
+    min-height: 280px;
+  }
+
+  .featured-name {
+    font-size: 1.5rem;
   }
 
   .cert-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-link {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
   }
 }
 
@@ -1207,12 +1305,20 @@ body::after {
     grid-template-columns: 1fr;
   }
 
+  .experience-card {
+    padding: 24px;
+  }
+
   .education-grid {
     grid-template-columns: 1fr;
   }
 
   .pro-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pro-card-img {
+    height: 160px;
   }
 
   .cert-grid {
@@ -1230,19 +1336,88 @@ body::after {
   .featured-content {
     padding: 24px;
   }
+
+  .featured-visual {
+    min-height: 220px;
+  }
+
+  .featured-name {
+    font-size: 1.3rem;
+  }
+
+  .featured-description {
+    font-size: 0.82rem;
+  }
+
+  .teaching-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .teaching-tags {
+    justify-content: center;
+  }
+
+  .quote-text {
+    font-size: 1.05rem;
+    padding: 0 16px;
+  }
+
+  .quote-text::before {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
+  :root {
+    --section-pad: 60px;
+  }
+
   .hero-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .hero-avatar-wrapper {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
   }
 
   .nav-projects-btn {
     display: none;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-content {
+    padding: 20px;
+  }
+
+  .featured-tags {
+    gap: 6px;
+  }
+
+  .featured-tag {
+    font-size: 0.6rem;
+    padding: 4px 10px;
+  }
+
+  .experience-card {
+    padding: 20px;
+  }
+
+  .experience-role {
+    font-size: 1rem;
+  }
+
+  .contact-links {
+    gap: 10px;
   }
 }
