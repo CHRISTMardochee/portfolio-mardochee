@@ -9,7 +9,7 @@ export default function Navbar() {
             <a href="#" className="nav-link" title="Home">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>
             </a>
-            <a href="https://www.linkedin.com/in/mardochee-kikigbagban/" target="_blank" rel="noopener noreferrer" className="nav-link" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/mardocheekg/" target="_blank" rel="noopener noreferrer" className="nav-link" title="LinkedIn">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>
             </a>
             <a href="https://github.com/CHRISTMardochee" target="_blank" rel="noopener noreferrer" className="nav-link" title="GitHub">
