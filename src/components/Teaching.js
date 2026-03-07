@@ -9,7 +9,7 @@ export default function Teaching() {
             <div className="container">
                 <h2 className="section-title reveal"><span>{t('teaching.title')}</span> <span className="emoji">🎓</span></h2>
                 <div className="teaching-card reveal">
-                    <div className="teaching-icon">🧑‍🏫</div>
+                    <div className="teaching-icon">👨‍🏫</div>
                     <div className="teaching-content">
                         <h3 className="teaching-role">{t('teaching.role')}</h3>
                         <p className="teaching-company">{t('teaching.company')}</p>
