@@ -298,25 +298,47 @@ body::after {
   flex-wrap: wrap;
 }
 
-.hero-cv-btn {
+.hero-cta-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 28px;
-  background: var(--accent);
+  padding: 12px 32px;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-blue) 100%);
   color: white;
   border-radius: var(--radius-full);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.9rem;
   text-decoration: none;
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.3);
+}
+
+.hero-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.45);
+}
+
+.hero-cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: transparent;
+  color: var(--text-primary);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-hover);
+  cursor: pointer;
 }
 
 .hero-cv-btn:hover {
-  background: var(--accent-light);
-  box-shadow: var(--shadow-glow);
+  background: var(--bg-glass-hover);
+  border-color: var(--accent-light);
   transform: translateY(-2px);
 }
 
